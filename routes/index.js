@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
     tenant: process.env.phoenix_tenant,
     environment: process.env.phoenix_env,
     machine: process.env.phoenix_machine,
-    deployed: process.env.phoenix_deployed
+    deployed: process.env.phoenix_deployed,
+    logo: process.env.phoenix_logo
   });
 });
 

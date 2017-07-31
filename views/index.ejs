@@ -6,9 +6,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <img src="https://seeklogo.com/images/B/bmw-logo-248C3D90E6-seeklogo.com.png" alt="tenant logo" />
+    <img src="<%= logo %>" alt="<%= tenant %> logo" />
 
-    <h1>Welcome to the <i><%= tenant %></i> Phoenix service</h1>
+    <h1>Welcome to the <i><%= tenant %></i> service</h1>
+    <em>Powered by Phoenix</em>
+
     <p>
       This is an example of a multi-tenant application, built in Node.js 
       and deployed with <a href="https://octopus.com">Octopus Deploy</a>. 
@@ -28,7 +30,6 @@
 
       <dt>Deployed</dt>
       <dd><%= deployed %></dd>
-
     </dl>
 
     <p>
