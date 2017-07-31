@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <img src="https://seeklogo.com/images/B/bmw-logo-248C3D90E6-seeklogo.com.png" alt="tenant logo" />
+
+    <h1>Welcome to the <i><%= tenant %></i> Phoenix service</h1>
+    <p>
+      This is an example of a multi-tenant application, built in Node.js 
+      and deployed with <a href="https://octopus.com">Octopus Deploy</a>. 
+      Each tenant gets their own instance of this application - some use a shared host, while others 
+      run on a dedicated host.
+    </p>
+
+    <dl>
+      <dt>Tenant name</dt>
+      <dd><%= tenant %></dd>
+
+      <dt>Machine name</dt>
+      <dd><%= machine %></dd>
+
+      <dt>Environment</dt>
+      <dd><%= environment %></dd>
+
+      <dt>Deployed</dt>
+      <dd><%= deployed %></dd>
+
+    </dl>
+
+    <p>
+      This application is a simple Node.js application built with Express. Source code: <i class='fa fa-fw fa-github'></i> <a href="https://github.com/OctopusSamples/Phoenix">OctopusSamples/Phoenix</a> 
+    </p>
+
+  </body>
+</html>
